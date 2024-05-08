@@ -8,11 +8,15 @@ body, html{
     font-family: 'Poppins';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Start of hero */
 .hero-container{
     width: 100%;
     height: 1000px;
-    background-image: url("headerImage.png");
+    background-image: url("assets/headerImage.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -189,16 +193,17 @@ li{
 /* Start of Product */
 .product-container{
     width: 100%;
-    height: 1000px;
-    background-color: #f8f8ff;
-}
+    height: 1100px;
+    background: rgb(52,73,94);
+    background: linear-gradient(to bottom, rgba(52,73,94,1) 0%, rgba(52,73,94,0.7511379551820728) 100%);}
 
 .product-row{
     display: grid;
     grid-auto-rows: 60px;
     grid-gap: 200px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 10px 50px 50px;
+    padding-left: 150px;
 }
 
 .product-col-left{
@@ -209,7 +214,7 @@ li{
 }
 
 .product-col-left h1{
-    color: #34495E;
+    color: #f8f8ff;
     font-size: 38px;
     font-weight: bold;
 }
@@ -222,7 +227,7 @@ li{
 
 .product-col-left p{
     font-size: 18px;
-    color: #34495E;
+    color: #f8f8ff;
     font-weight: 500;
 }
 
@@ -252,10 +257,45 @@ li{
     transition-duration: 0.4s;
 }
 
-.embossed{
-    width: 500px;
-    height: 300px;
+.product-colLeft{
+    padding-left: 193px;
 }
+
+.product-colRight{
+    margin-right: 1500px;
+    width: 800px;
+    height: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    color: #f8f8ff;
+}
+
+.img-product{
+    width: 500px;
+    border-radius: 2%;
+}
+
+.product-card{
+    width: 500px;
+    height: 600px;
+    background-color: #f8f8ff;
+    margin-top: -150px;
+    border-radius: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #34495E;
+    transition: 0.4s ease;
+}
+
+.product-card p{
+    padding-top: 30px;
+    color: #f8f8ff;
+    font-size: 18px;
+    
+}
+
 
 /* hover effect */
 .product-button:hover{
@@ -271,6 +311,11 @@ li{
 
 .product-row-item{
     text-align: justify;
+}
+
+.product-card:hover{
+    background-color: #07AFD2;
+    transition-duration: 0.4s ease;
 }
 
 /* End of Product */
