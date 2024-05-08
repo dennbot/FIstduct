@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+/* Start of Navbar */
+.navbar-container{
+    height: 50px;
+    padding-top: 20px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0);
+}
+
+.navbar-logo a{
+    text-decoration: none;
+    color: #34495E;
+    font-size: 24px;
+    font-weight: 800;
+    padding-left: 133px;
+    float: left;
+}
+
+.navbar-text{
+    float: right;
+    font-weight: bolder;
+    padding-right: 156px;
+}
+
+.navbar-text ul li a{
+    font-size: 18px;
+    color: #34495E;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    gap: 20px; 
+}
+
+.navbar-container a:hover{
+    color: #07AFD2;
+    transition: 0.3s ease;
+}
+/* End of Navbar */
+
+/* Start of Hero Section */
+.hero-container{
+    height: 534px;
+    background: url("image\ 14.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    color: #f8f8ff;
+}
+
+.hero-text h1{
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+.hero-text h2{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.hero-overlay{
+    background-image: url();
+}
+/* End of Hero Section */
+
+/* Start of Intro Section */
+.intro-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-mascot{
+    position: absolute;
+    top: -70px;
+}
+
+.intro-textBox{
+    width: 954px;
+    height: 364px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34495E;
+    border-radius: 35px;
+    color: #f8f8ff;
+    font-size: 24;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+}
+
+/* End of Into Section */
+
+/* Start of Company Intro Section */
+
+.comp-container{
+    width: 100%;
+    height: 536px;
+}
+
+.comp-introHeader-container{
+    width: 698px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 582px;
+    padding-right: 582px;
+    color: #07AFD2;
+}
+
+.comp-introHeader-container h1{
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+
+
+.intro-grid-container{
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    width: 1440px;
+    height: 562px;
+    margin-top: 51px;
+    padding-left: 143px;
+    padding-right: 143px;
+}
+
+.grid-item-right{
+    text-align: justify;
+}
+/* End of Company Intro Section */
+
+/* Start of footer Section */
+
+/* *, *:before, *after{
+    box-sizing: border-box;
+} */
+
+.footer-container{
+    width: 100%;
+    height: 528px;
+    background-color: #34495E;
+    margin: auto;
+    /* display: flex;
+    flex-flow: row wrap; */
+}
+
+.footer-logo{
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 76px;
+    padding-left: 164px;
+    color: #f8f8ff;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 15%;
+    padding: 0 15px;
+    padding-left: 164px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #f8f8ff;
+    text-transform: capitalize;
+    padding-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #f8f8ff;
+    padding-left: 8px;
+}
+
+.footer-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #f8f8ff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-link a:hover{
+    color: #24262b;
+    background-color: #f8f8ff;
+}
