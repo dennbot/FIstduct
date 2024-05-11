@@ -10,6 +10,7 @@ body, html{
 
 html{
     scroll-behavior: smooth;
+    transition-duration: 0.5s ease;
 }
 
 /* Start of hero */
