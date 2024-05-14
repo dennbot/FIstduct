@@ -178,6 +178,12 @@ li{
 .grid-item-right{
     text-align: justify;
 }
+
+.grid-item-right img{
+    width: 800px;
+    height: 400px;
+    margin-left: -120px;
+}
 /* End of Company Intro Section */
 
 /* Start of Contact Section */
@@ -187,7 +193,19 @@ li{
     height: 1000px;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8ff;
+    background: rgb(52,73,94);
+    background: linear-gradient(to bottom, rgba(52,73,94,1) 0%, rgba(52,73,94,0.7511379551820728) 100%);
+}
+
+.left-grid{
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.right-grid{
+    padding-top: 100px;
+    text-align: justify;
+    padding-left: 100px;
 }
 
 .contact-card{
@@ -195,22 +213,53 @@ li{
     height: 700px;
     border-style: solid;
     border-width: 2px;
-    border-color: #24262b;
+    border-color: #f8f8ff;
+    background-color: #f8f8ff;
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: rgb(52, 73, 94,0.2);
+    background-color: linear-gradient(to bottom, rgba(52,73,94,1)0%, rgba(52,73,94,0.7511379551820728)100%);
 }
 
-.maps{
-    padding-left: 100px;
-    padding-top: 100px;
+.right-grid h4{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #f8f8ff;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    position: relative;
 }
-.contact{
-    width: 700px;
-    padding-left: 800px;
-    margin-top: -460px;
+
+.right-grid h5{
+    font-size: 28px;
+    font-weight: 800;
+    color: #07AFD2;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.right-grid ul li i{
+    height: 50px;
+    font-size: 30px;
+    color: #f8f8ff;
+
+}
+
+.right-grid li p{
+    margin-left: 50px;
+    margin-top: -50px;
+    width: 310px;
     text-align: justify;
-    height: 600px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #f8f8ff;
 }
 
-.contact h4{
+
+/* .contact h4{
     font-size: 30px;
     font-weight: bolder;
     color: #34495E;
@@ -226,7 +275,7 @@ li{
     text-transform: capitalize;
     padding-bottom: 5px;
     position: relative;
-}
+} */
 
 
 
