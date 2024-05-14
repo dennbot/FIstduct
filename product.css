@@ -93,6 +93,35 @@ li{
 
 /* End of Product */
 
+/* Start of Specs */
+.specs-container{
+    width: auto;
+    height: 800px;
+}
+
+/* End of Specs */
+
+/* Start of Advantage */
+.advantage-container{
+    width: auto;
+    height: 600px;
+}
+/* End of Advantage */
+
+/* Start of Comparison */
+.comparison-container{
+    width: auto;
+    height: 600px;
+}
+/* End of Comparison */
+
+/* Start of Indexes */
+.indexes-container{
+    width: auto;
+    height: 800px;
+}
+/* End of Indexes */
+    
 /* Start of Footer */
 .footer-container{
     width: 100%;
