@@ -55,7 +55,7 @@ li{
 
 /* Start of Hero Section */
 .hero-container{
-    height: 534px;
+    height: 634px;
     background: url("assets/image 14.png");
     background-size: cover;
     background-position: center;
@@ -87,8 +87,91 @@ li{
 /* Start of Product */
 .product-container{
     width: auto;
-    height: 700px;
+    height: 750px;
+    background: rgb(52,73,94);
+    background: linear-gradient(to bottom, rgba(52,73,94,1) 0%, rgba(52,73,94,0.7511379551820728) 100%);
+}
+
+
+.product-grid{
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px 50px 50px;
+    padding-left: 150px;
+}
+
+.left-grid{
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.left-grid h1{
+    font-size: 60px;
+    color: #07AFD2;
+    font-weight: bolder;
+}
+
+.left-grid h2{
+    font-size: 40px;
+    color: #f8f8ff;
+    font-weight: bold;
+}
+
+.left-grid h3{
+    font-size: 30px;
+    color: #07AFD2;
+}
+
+.left-grid p{
+    font-size: 20px;
+    color: #f8f8ff;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.right-grid{
+    margin-top: 80px;
+}
+
+.grid-card{
+    width: 510px;
+    height: 600px;
     background-color: #f8f8ff;
+    border-radius: 10px;
+}
+
+.product-card{
+    margin-left: 5px;
+    padding-top: 5px;
+    width: 500px;
+    height: 500px;
+    color: #34495E;
+}
+
+.product-card h3{
+    margin-left: 130px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product-card h4{
+    margin-left: 145px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s
+}
+
+.mySlides{
+    width: 500px;
+    height: 600px;
+    border-radius: 2%;
+    display: none;
 }
 
 /* End of Product */

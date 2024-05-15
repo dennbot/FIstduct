@@ -1,19 +1,14 @@
-let slideIndex = [1,1];
-let slideId = ["mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+var slideIndex = 0;
+carousel();
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+function carousel(){
+  var i;
+  var x = document.getElementsByClassName("product-card");
+  for(i = 0; i < x.length; i++){
+    x[i].style.display = "none";
   }
-  x[slideIndex[no]-1].style.display = "block";  
+  slideIndex++;
+  if (slideIndex > x.length){slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
 }
