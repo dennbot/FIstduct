@@ -203,6 +203,50 @@ li{
     width: auto;
     height: 800px;
 }
+
+.index-grid{
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px 20px 20px;
+    width: auto;
+    height: 800px;
+}
+
+table, th, td{
+    border: 2px solid;
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+}
+
+.FD{
+    background-color: rgba(7, 175, 210, 1);
+}
+
+.left-index{
+    margin-left: 100px;
+}
+
+.right-index{
+    width: 600px;
+    height: 400px;
+    text-align: justify;
+}
+
+.right-index h3{
+    font-size: 30px;
+    color: #34495E;
+    font-weight: bold;
+}
+
+.right-index p{
+    font-size: 20px;
+    color: #34495E;
+    font-weight: bold;
+}
+
 /* End of Indexes */
     
 /* Start of Footer */
