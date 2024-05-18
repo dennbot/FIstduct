@@ -13,14 +13,14 @@ function carousel(){
   setTimeout(carousel, 3000);
 }
 
-const scrollers = document.querySelectorAll(".comparison-container");
+const scrollers = document.querySelectorAll(".scroller");
   addAnimation();
 
 function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
 
-    const scrollerInner = scroller.querySelector(".row");
+    const scrollerInner = scroller.querySelector(".scroller-inner");
     const scrollerContent = Array.from(scrollerInner.children);
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
@@ -29,3 +29,4 @@ function addAnimation() {
     });
   });
 }
+
