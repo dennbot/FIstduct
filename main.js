@@ -12,3 +12,20 @@ function carousel(){
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 3000);
 }
+
+const scrollers = document.querySelectorAll(".comparison-container");
+  addAnimation();
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = scroller.querySelector(".row");
+    const scrollerContent = Array.from(scrollerInner.children);
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
