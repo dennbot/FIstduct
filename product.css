@@ -5,6 +5,8 @@
 
 body{
     font-family: 'Poppins';
+    background-color: #1f2029;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #12141d 100%);
 }
 
 /* Start of Navbar */
@@ -12,6 +14,7 @@ body{
     height: 50px;
     padding-top: 20px;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0);
+    background-color: #f8f8ff;
 }
 
 .navbar-logo a{
@@ -88,8 +91,6 @@ li{
 .product-container{
     width: auto;
     height: 750px;
-    background: rgb(52,73,94);
-    background: linear-gradient(to bottom, rgba(52,73,94,1) 0%, rgba(52,73,94,0.7511379551820728) 100%);
 }
 
 
@@ -179,7 +180,60 @@ li{
 /* Start of Specs */
 .specs-container{
     width: auto;
-    height: 800px;
+    height: 600px; 
+}
+
+.specs-grid{
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px 20px 20px;
+    width: auto;
+}
+
+.item-left{
+    background-color: #07AFD2;
+    width: 450px;
+    text-align: justify;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.item-right{
+    background-color: #07AFD2;
+}
+
+.item-left h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f8f8ff;
+}
+
+.item-left h3{
+    font-size: 50px;
+    font-weight: bold;
+    color: #07AFD2;
+}
+
+.item-left p{
+    font-size: 20px;
+    font-weight: normal;
+    color: #f8f8ff;
+}
+
+table, th, td{
+    border: 1px solid #f8f8ff;
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+    color: #f8f8ff;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.item-right{
+    margin-top: 100px;
 }
 
 /* End of Specs */
@@ -187,19 +241,19 @@ li{
 /* Start of Advantage */
 .advantage-container{
     width: auto;
-    height: 600px;
+    height: 0px;
 }
 /* End of Advantage */
 
 /* Start of Comparison */
 .comparison-container{
     width: auto;
-    height:100px;
+    height: 700px;
     display: grid;
-    min-block-size: 100vh;
+    min-block-size: 10vh;
     place-content: center;
     font-size: 1.125rem;
-    background-color: #f8f8ff;
+
 }
 
 .tag-list{
@@ -211,12 +265,14 @@ li{
 .tag-list li{
     padding: 1rem;
     background-color: transparent;
-    border: 1px solid #34495E;
+    border: 3px solid #eceff133;
     border-radius: 0.5rem;
+    color: #f8f8ff;
 }
 
 .scroller{
     max-width: 10000px;
+    margin-top: -50px;
 }
 
 .scroller-inner{
@@ -253,6 +309,35 @@ li{
     }
 }
 
+.comparison-title{
+    margin-left: 600px;
+    margin-top: -100px;
+    text-align: justify;
+}
+
+.comparison-title h1{
+    padding-bottom: 20px;
+    color: #f8f8ff;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.comparison-title h2{
+    padding-bottom: 20px;
+    color: #07AFD2;
+    font-size: 38px;
+    font-weight: bolder;
+    padding-left: 180px;
+}
+
+.comparison-title h3{
+    color: #f8f8ff;
+    font-size: 38px;
+    font-weight: bolder;
+    padding-left: 220px;
+    margin-bottom: 150px;
+}
+
 /* End of Comparison */
 
 /* Start of Indexes */
@@ -281,18 +366,25 @@ li{
 }
 
 table, th, td{
-    border: 2px solid;
+    border: 1px solid #f8f8ff;
     border-collapse: collapse;
     width: 600px;
     text-align: center;
+    color: #f8f8ff;
+    font-weight: normal;
 }
 
 .FD{
-    background-color: rgba(7, 175, 210, 1);
+    background-color: #34495E;
 }
 
 .left-index{
-    margin-left: 100px;
+    margin-left: 250px;
+}
+
+.left-index h2{
+    text-align: center;
+    color: #07AFD2;
 }
 
 .right-index{
@@ -303,14 +395,14 @@ table, th, td{
 
 .right-index h3{
     font-size: 30px;
-    color: #34495E;
+    color: #07AFD2;
     font-weight: bold;
 }
 
 .right-index p{
     font-size: 20px;
-    color: #34495E;
-    font-weight: bold;
+    color: #f8f8ff;
+    font-weight: normal;
 }
 
 /* End of Indexes */
